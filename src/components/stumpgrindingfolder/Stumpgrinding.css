@@ -1,7 +1,11 @@
 .stumpgrinding-section{
-	background: brown;
 	width: 100%;
 	height: 100vh;
+	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+	url("https://fthmb.tqn.com/J2sC5-6ZWWkXeXX5g1RB8_tDq_o=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/tree-stump-big-5799efda3df78c3276ce7412.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(200, 200, 200, 0.7);
 }
 
 .big-word { 
