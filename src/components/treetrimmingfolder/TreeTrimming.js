@@ -6,7 +6,7 @@ const Element = ScrollAnim.Element;
 const TreeTrimming = () => {
 	return (
 		<Element name="myScrollToElement" className="treetrimming-section" id="tree-trimming">
-			akjsd
+			<div className="big-word"> PAGE 3</div>
 		</Element>
 	)
 }
