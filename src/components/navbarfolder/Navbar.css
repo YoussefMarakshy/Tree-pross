@@ -1,21 +1,31 @@
-.nav-bar{
+.nav-bar {
 	position: fixed;
 	height:130px;
 	width:100%;
-	background: cyan;
-	opacity:0.6;
+	background: rgba(0,200,200,0.8);
+	/*opacity:0.6;*/
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.nav-bar__logo{
+.nav-list {
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.nav-list:hover {
+	color: yellow;
+}
+
+.nav-bar__logo {
 	height:50%;
 	margin-left: 50px;
 }
 
-.nav-bar__buttons{
+.nav-bar__buttons {
 	margin-right: 50px;
+	display: flex;
 }
 
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Homepage.css';
-import NavBar from '../navbarfolder/Navbar'
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
@@ -46,7 +45,6 @@ class Homepage extends Component{
 	render(){
 		return (
 	<div className="homepage-fullscreen">
-	<NavBar />
 		<div className="wrapper">
 		</div>
 		<Slider className="slider-wrapper">
