@@ -47,7 +47,7 @@ class Homepage extends Component{
 	<div className="homepage-fullscreen">
 		<div className="wrapper">
 		</div>
-		<Slider className="slider-wrapper" infinite="true">
+		<Slider className="slider-wrapper" infinite="true" autoplay="2000">
 			{content.map((item, index) => (
 				<div
 					key={index}
