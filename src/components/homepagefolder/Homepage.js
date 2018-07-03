@@ -5,6 +5,7 @@ import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
 import './Swiper-animations.css';
 import './Swiper.css';
+import '../animate.css';
 const ScrollAnim = require('rc-scroll-anim');
 const Link = ScrollAnim.Link;
 
@@ -55,9 +56,9 @@ class Homepage extends Component{
 					style={{ background: `url('${item.image}') no-repeat center center` }}
 				>
 					<div className="inner">
-						<h1>{item.title}</h1>
-						<p>{item.description}</p>
-						<button>{item.button}</button>
+						<h1 className=" animated slideInDown">{item.title}</h1>
+						<p className="">{item.description}</p>
+						<button onClick="animated bounce">{item.button}</button>
 					</div>
 				</div>
 			))}

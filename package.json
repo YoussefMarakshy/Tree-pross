@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "animate.css": "^3.6.1",
+    "hover.css": "^2.3.2",
     "normalize.css": "^8.0.0",
     "rc-scroll-anim": "^2.5.2",
     "react": "^16.4.1",
