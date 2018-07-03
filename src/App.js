@@ -19,7 +19,6 @@ class App extends Component {
         <StumpGrinding />
         <TreeTrimming />
         <StormDamage />
-
       </div>
     );
   }

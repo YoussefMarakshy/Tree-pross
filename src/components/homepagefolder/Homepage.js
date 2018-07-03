@@ -6,8 +6,6 @@ import 'normalize.css/normalize.css';
 import './Swiper-animations.css';
 import './Swiper.css';
 import '../animate.css';
-const ScrollAnim = require('rc-scroll-anim');
-const Link = ScrollAnim.Link;
 
 // const Element = ScrollAnim.Element;
 
@@ -58,7 +56,7 @@ class Homepage extends Component{
 					<div className="inner">
 						<h1 className=" animated slideInDown">{item.title}</h1>
 						<p className="">{item.description}</p>
-						<button onClick="animated bounce">{item.button}</button>
+						<button >{item.button}</button>
 					</div>
 				</div>
 			))}
