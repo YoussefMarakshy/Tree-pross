@@ -9,12 +9,12 @@ const NavBar = () => {
      	 	<section>
        			<div className="nav-bar">
 				<img src="./images/logo.png" alt="" className="nav-bar__logo"/>
-				<div className="nav-bar__buttons">
-				<Link className="nav-list" to="tree-removal">Tree Removal</Link>
-				<Link className="nav-list" to="stump-grinding">Stump Grinding</Link>
-				<Link className="nav-list" to="tree-trimming">Tree Trimming</Link>
-				<Link className="nav-list" to="storm-damage">Storm Damage</Link>
-				</div>
+				<nav className="nav-bar__buttons cl-effect-7">
+				<a><Link className="" to="tree-removal">Tree Removal</Link></a>
+				<a><Link className="" to="stump-grinding">Stump Grinding</Link></a>
+				<a><Link className="" to="tree-trimming">Tree Trimming</Link></a>
+				<a><Link className="" to="storm-damage">Storm Damage</Link></a>
+				</nav>
 				</div>
      		 </section>
     	</header>
