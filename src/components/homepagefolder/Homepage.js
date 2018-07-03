@@ -6,11 +6,6 @@ import 'normalize.css/normalize.css';
 import './Swiper-animations.css';
 import './Swiper.css';
 import '../animate.css';
-<<<<<<< HEAD
-=======
-const ScrollAnim = require('rc-scroll-anim');
-const Link = ScrollAnim.Link;
->>>>>>> b8ef80a9c5b7c4db79f3be6b10d17821e4048f67
 
 // const Element = ScrollAnim.Element;
 
