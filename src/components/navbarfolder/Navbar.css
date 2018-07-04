@@ -23,6 +23,7 @@
 .nav-bar__logo {
 	height: 250px;
 	margin-left: 50px;
+	cursor: pointer;
 }
 
 .nav-bar__buttons {

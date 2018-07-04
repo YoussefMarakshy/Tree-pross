@@ -6,6 +6,8 @@ import 'normalize.css/normalize.css';
 import './Swiper-animations.css';
 import './Swiper.css';
 import '../animate.css';
+const ScrollAnim = require('rc-scroll-anim');
+const Element = ScrollAnim.Element;
 
 // const Element = ScrollAnim.Element;
 
@@ -43,6 +45,7 @@ const content = [
 class Homepage extends Component{
 	render(){
 		return (
+	<Element name="myScrollToElement" className="homepagee-section" id="home-pagee">
 	<div className="homepage-fullscreen">
 		<div className="wrapper">
 		</div>
@@ -62,6 +65,7 @@ class Homepage extends Component{
 			))}
 		</Slider>
 	</div>
+	</Element>
 );
 		
 	}
