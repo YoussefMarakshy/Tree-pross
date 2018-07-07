@@ -15,6 +15,7 @@
     "nodemailer": "^4.6.7",
     "nodemon": "^1.17.5",
     "normalize.css": "^8.0.0",
+    "raw-body": "^2.3.3",
     "rc-scroll-anim": "^2.5.2",
     "react": "^16.4.1",
     "react-animated-slider": "^1.1.2",
