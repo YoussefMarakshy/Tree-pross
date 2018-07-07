@@ -4,14 +4,11 @@ class Slider extends Component {
 
 	constructor(props) {
 		super();
-		let slides = ["slide1","slide2","slide3", "sakjhfdiusd"]
 		this.state  = { 
-			slides,
 			sliderIndex: 0,
-			slidesContainerWidthPercentage: slides.length*100,
-			slidesWidth: 100/slides.length
+			slidesContainerWidthPercentage: props.slides.length*100,
+			slidesWidth: 100/props.slides.length
 		};
-
 	}
 	previousSlide = e => {
 		if(this.state.sliderIndex>0)
@@ -20,7 +17,7 @@ class Slider extends Component {
 
 
 	nextSlide = e => {
-		if(this.state.sliderIndex<(this.state.slides.length - 1))
+		if(this.state.sliderIndex<(this.props.slides.length - 1))
 			this.setState({sliderIndex: this.state.sliderIndex+1});
 	}
 
@@ -30,13 +27,11 @@ class Slider extends Component {
 			<div className="slider">
 				<div className="myslider" data-dots="true" data-autoplay="false" data-show-slides="1">
 					<div className="images_container" style={{ width: this.state.slidesContainerWidthPercentage+'%', transform: `translateX(-${this.state.slidesWidth*this.state.sliderIndex}%)`}}>
-						{ this.state.slides.map((slide,index) => <div key={index} style={{ width: this.state.slidesWidth+'%'}} className="slide"><h1>slide</h1><h1>slide</h1><h1>slide</h1><h1>slide</h1><h1>slide</h1><h1>slide</h1></div>) }
+						{ this.props.slides.map((slide,index) => <div key={index} style={{ width: this.state.slidesWidth+'%'}} className="slide">{slide}</div>) }
 					</div>
 				</div>
-				<div className="slider_nav">
-					<button onClick={ this.previousSlide }>prev</button>
-					<button onClick={ this.nextSlide }>next</button>
-				</div>
+				<a className="slider-nav previous-nav" onClick={ this.previousSlide } ><i className="fas fa-chevron-left"></i> </a>
+				<a className="slider-nav next-nav" onClick={ this.nextSlide } ><i className="fas fa-chevron-right"></i> </a>
 			</div>
 		)
 	}
