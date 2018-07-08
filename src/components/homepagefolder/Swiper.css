@@ -56,7 +56,7 @@ button {
   -webkit-transition: all .5s ease;
           transition: all .5s ease;
   border: none;
-  background: #FFD800;
+  background: #55b65f;
   border-radius: 30px;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -64,13 +64,17 @@ button {
   font-weight: 400;
   font-size: 13px;
   cursor: cursor;
+  color:#FFFFFF;
 }
 
 button:hover {
   color: #FFFFFF;
-  background: #222222;
+  background: #62d36e;
   -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
-          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+   cursor:pointer;
+
+
 }
 
 .wrapper {
@@ -117,33 +121,42 @@ button:hover {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 10;
-		background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
-		width: 32px;
-		height: 32px;
+		background: url("https://cdn.discordapp.com/attachments/262272190643175424/463568192703561730/arrow-right.png") no-repeat center center;
+		width: 60px;
+		height: 60px;
 		text-indent: -9999px;
 		cursor: pointer;
-}
-
-.previousButton:hover, .nextButton:hover {
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
-}
-
-.previousButton {
-  left: 0;
-  -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
-          transform: rotate(180deg) translateY(calc(50% + 0px));
-}
-
-.previousButton:hover {
-  left: -10px;
-}
-
-.nextButton {
-  right: 0;
+      transition: transform .2s;
 }
 
 .nextButton:hover {
-  right: -10px;
+  background: url('https://cdn.discordapp.com/attachments/262272190643175424/463568190451089408/arrow-right_1.png') no-repeat center center ;
+     transform: scale(1.5);
+}
+
+.previousButton:hover {
+  -webkit-transform: scale(1.5) rotate(0deg) translateY(calc(50% + 0px));
+          transform: scale(1.5) rotate(180deg) translateY(calc(50% + 0px));
+}
+
+.previousButton {
+  left: 30px;
+      -webkit-transform: rotate(0deg) translateY(calc(50% + 0px));
+          transform: rotate(180deg) translateY(calc(50% + 0px));
+}
+
+.previousButton::before { 
+    content: "Read this: ";
+}
+
+.previousButton:hover {
+}
+
+.nextButton {
+  right: 30px;
+}
+
+.nextButton:hover {
 }
 
 .slider-content {
