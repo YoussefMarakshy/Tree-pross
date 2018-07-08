@@ -7,6 +7,8 @@ import TreeTrimming from './components/treetrimmingfolder/TreeTrimming'
 import StormDamage from './components/stormdamagefolder/Stromdamage'
 import TreeRemoval from './components/treeremovalfolder/Treeremoval'
 import StumpGrinding from './components/stumpgrindingfolder/Stumpgrinding'
+import Contact from './components/treetrimmingfolder/contact'
+
 
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
         <StumpGrinding />
         <TreeTrimming />
         <StormDamage />
+
       </div>
     );
   }
