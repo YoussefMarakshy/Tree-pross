@@ -16,7 +16,9 @@ const slides = [
 class Homepage extends Component{
 	render(){
 		return (
+			<div id="homepage">
 			<Slider slides={slides}/>
+			</div>
 		);
 		
 	}

@@ -38,8 +38,6 @@ class Contact extends Component{
 		  });
 	}
 
-
-
 	render(){
 		return (
 			<Form onSubmit={this.handleSubmit} style={{ width: '600px' }}>
