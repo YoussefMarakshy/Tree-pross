@@ -16,6 +16,7 @@ class Contact extends Component{
 	}
 
 	handleChange = e => {
+		console.log(e.target.name);
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
@@ -27,12 +28,20 @@ async handleSubmit(e) {
 			email: this.state.email,
 			message: this.state.message
 		  })
+<<<<<<< HEAD
 		  .then(function (response) {
+=======
+		  .then(response => {
+>>>>>>> 0696a88fa118b2970028eb2d5e2e8bb9ba72a450
 			console.log(response)
 			alert(response.data);
 			this.setState({name:'',message:'',email:''});
 		  })
+<<<<<<< HEAD
 		  .catch(function (error) {
+=======
+		  .catch(error => {
+>>>>>>> 0696a88fa118b2970028eb2d5e2e8bb9ba72a450
 			console.log(error);
 		  });
 	}
@@ -47,6 +56,7 @@ async handleSubmit(e) {
 					<Input 
 					type="text"
 					name="name"
+					value={this.state.name}
 					onChange={this.handleChange} />
 				</FormGroup>
 				<FormGroup>
@@ -54,6 +64,7 @@ async handleSubmit(e) {
 					<Input 
 					type="email"
 					name="email"
+					value={this.state.email}
 					onChange={this.handleChange} />
 				</FormGroup>
 					<FormGroup>
@@ -61,6 +72,7 @@ async handleSubmit(e) {
 					<Input 
 					type="textarea"
 					name="message"
+					value={this.state.message}
 					onChange={this.handleChange} />
 				</FormGroup>
 				<Button> Submit </Button>

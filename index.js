@@ -9,8 +9,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.post('/api/form', (req, res) => {
+<<<<<<< HEAD
 	nodeMailer.createTestAccount((err, account) => {
 
+=======
+	console.log("HELLO");
+	nodeMailer.createTestAccount((err, account) => {
+>>>>>>> 0696a88fa118b2970028eb2d5e2e8bb9ba72a450
 		const htmlEmail = `
 			<h3> Contact Details </h3>
 			<ul>
@@ -21,7 +26,11 @@ app.post('/api/form', (req, res) => {
 			<p>${req.body.message}</p>
 		`
 
+<<<<<<< HEAD
 let transporter = nodeMailer.createTransport({ 
+=======
+		let transporter = nodeMailer.createTransport({ 
+>>>>>>> 0696a88fa118b2970028eb2d5e2e8bb9ba72a450
 			host: 'smtp.ethereal.email',
 			port: 587,
         	secure: false, 
@@ -32,15 +41,16 @@ let transporter = nodeMailer.createTransport({
 			tls: {rejectUnauthorized: false}
 		})
 
+
 		let mailOptions = {
 			from :'test@testaccount.com',
-			to: 'lbjksivgf7w754yh@ethereal.email',
+			to: 'mostafamesiry@gmail.com',
 			replyTo: 'test@testaccount.com',
 			subject: 'New Message',
 			text: req.body.message,
 			html : htmlEmail
 		}
-
+		console.log("SENDING");
 		transporter.sendMail(mailOptions, (err, info) => {
 				if(err) {
 					console.log("ERROR");

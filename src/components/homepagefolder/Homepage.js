@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
 import './Homepage.css';
+<<<<<<< HEAD
 import Slider from './Slider';
+=======
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import 'normalize.css/normalize.css';
+import './Swiper-animations.css';
+import './Swiper.css';
+const ScrollAnim = require('rc-scroll-anim');
+const Element = ScrollAnim.Element;
+>>>>>>> 0696a88fa118b2970028eb2d5e2e8bb9ba72a450
 
 
 const content = [
