@@ -1,15 +1,7 @@
 import React, { Component } from 'react';
 import './Homepage.css';
-import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
-import 'normalize.css/normalize.css';
-import './Swiper-animations.css';
-import './Swiper.css';
-import '../animate.css';
-const ScrollAnim = require('rc-scroll-anim');
-const Element = ScrollAnim.Element;
+import Slider from './Slider';
 
-// const Element = ScrollAnim.Element;
 
 const content = [
 	{
@@ -45,28 +37,10 @@ const content = [
 class Homepage extends Component{
 	render(){
 		return (
-	<Element name="myScrollToElement" className="homepagee-section" id="home-pagee">
-	<div className="homepage-fullscreen">
-		<div className="wrapper">
-		</div>
-		<Slider className="slider-wrapper" autoplay="2000">
-			{content.map((item, index) => (
-				<div
-					key={index}
-					className="slider-content homepage-section"
-					style={{ background: `url('${item.image}') no-repeat center center` }}
-				>
-					<div className="inner">
-						<h1 className=" animated slideInDown">{item.title}</h1>
-						<p className="">{item.description}</p>
-						<button >{item.button}</button>
-					</div>
-				</div>
-			))}
-		</Slider>
+	<div className="homepage-section">
+		<Slider />
 	</div>
-	</Element>
-);
+	);
 		
 	}
 }

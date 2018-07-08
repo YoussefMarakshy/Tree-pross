@@ -19,16 +19,22 @@ class Contact extends Component{
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
-	async handleSubmit(e) {
+async handleSubmit(e) {
 		e.preventDefault()
 
-		const { name, email, message } = this.state
-
-		const form = await axios.post('/api/form', {
-			name,
-			email,
-			message
-		})
+		axios.post('/api/form', {
+			name: this.state.name,
+			email: this.state.email,
+			message: this.state.message
+		  })
+		  .then(function (response) {
+			console.log(response)
+			alert(response.data);
+			this.setState({name:'',message:'',email:''});
+		  })
+		  .catch(function (error) {
+			console.log(error);
+		  });
 	}
 
 

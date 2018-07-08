@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.post('/api/form', (req, res) => {
-	nodemailer.createTestAccount((err, account) => {
+	nodeMailer.createTestAccount((err, account) => {
 
 		const htmlEmail = `
 			<h3> Contact Details </h3>
@@ -21,13 +21,15 @@ app.post('/api/form', (req, res) => {
 			<p>${req.body.message}</p>
 		`
 
-		let transporter = nodemailer.createTransport({ 
-			host: ' smtp.etheral.email',
+let transporter = nodeMailer.createTransport({ 
+			host: 'smtp.ethereal.email',
 			port: 587,
+        	secure: false, 
 			auth: {
 				user: 'lbjksivgf7w754yh@ethereal.email',
-				password: '8MczAw8hhrPMKQgTtd' 
-			}
+				pass: '8MczAw8hhrPMKQgTtd' 
+			},
+			tls: {rejectUnauthorized: false}
 		})
 
 		let mailOptions = {
@@ -41,10 +43,12 @@ app.post('/api/form', (req, res) => {
 
 		transporter.sendMail(mailOptions, (err, info) => {
 				if(err) {
+					console.log("ERROR");
 					return console.log(err)
 				}
-					console.log('Message Sent: %s', info.message)
-					console.log('Message URL: %s', nodemailer.getTestMessageURL(info))
+					console.log("MESSAGE SENT");
+					res.status(200).send('Message Sent!')
+					console.log('Message URL: %s', nodeMailer.getTestMessageURL(info))
 		})
 
 	})
