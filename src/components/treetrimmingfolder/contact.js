@@ -16,19 +16,26 @@ class Contact extends Component{
 	}
 
 	handleChange = e => {
+		console.log(e.target.name);
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
 	async handleSubmit(e) {
 		e.preventDefault()
 
-		const { name, email, message } = this.state
-
-		const form = await axios.post('/api/form', {
-			name,
-			email,
-			message
-		})
+		axios.post('/api/form', {
+			name: this.state.name,
+			email: this.state.email,
+			message: this.state.message
+		  })
+		  .then(response => {
+			console.log(response)
+			alert(response.data);
+			this.setState({name:'',message:'',email:''});
+		  })
+		  .catch(error => {
+			console.log(error);
+		  });
 	}
 
 
@@ -41,6 +48,7 @@ class Contact extends Component{
 					<Input 
 					type="text"
 					name="name"
+					value={this.state.name}
 					onChange={this.handleChange} />
 				</FormGroup>
 				<FormGroup>
@@ -48,6 +56,7 @@ class Contact extends Component{
 					<Input 
 					type="email"
 					name="email"
+					value={this.state.email}
 					onChange={this.handleChange} />
 				</FormGroup>
 					<FormGroup>
@@ -55,6 +64,7 @@ class Contact extends Component{
 					<Input 
 					type="textarea"
 					name="message"
+					value={this.state.message}
 					onChange={this.handleChange} />
 				</FormGroup>
 				<Button> Submit </Button>

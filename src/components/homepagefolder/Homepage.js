@@ -5,7 +5,6 @@ import 'react-animated-slider/build/horizontal.css';
 import 'normalize.css/normalize.css';
 import './Swiper-animations.css';
 import './Swiper.css';
-import '../animate.css';
 const ScrollAnim = require('rc-scroll-anim');
 const Element = ScrollAnim.Element;
 

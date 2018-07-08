@@ -9,8 +9,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 
 app.post('/api/form', (req, res) => {
-	nodemailer.createTestAccount((err, account) => {
-
+	console.log("HELLO");
+	nodeMailer.createTestAccount((err, account) => {
 		const htmlEmail = `
 			<h3> Contact Details </h3>
 			<ul>
@@ -21,30 +21,35 @@ app.post('/api/form', (req, res) => {
 			<p>${req.body.message}</p>
 		`
 
-		let transporter = nodemailer.createTransport({ 
-			host: ' smtp.etheral.email',
+		let transporter = nodeMailer.createTransport({ 
+			host: 'smtp.ethereal.email',
 			port: 587,
+        	secure: false, 
 			auth: {
 				user: 'lbjksivgf7w754yh@ethereal.email',
-				password: '8MczAw8hhrPMKQgTtd' 
-			}
+				pass: '8MczAw8hhrPMKQgTtd' 
+			},
+			tls: {rejectUnauthorized: false}
 		})
+
 
 		let mailOptions = {
 			from :'test@testaccount.com',
-			to: 'lbjksivgf7w754yh@ethereal.email',
+			to: 'mostafamesiry@gmail.com',
 			replyTo: 'test@testaccount.com',
 			subject: 'New Message',
 			text: req.body.message,
 			html : htmlEmail
 		}
-
+		console.log("SENDING");
 		transporter.sendMail(mailOptions, (err, info) => {
 				if(err) {
+					console.log("ERROR");
 					return console.log(err)
 				}
-					console.log('Message Sent: %s', info.message)
-					console.log('Message URL: %s', nodemailer.getTestMessageURL(info))
+					console.log("MESSAGE SENT");
+					res.status(200).send('Message Sent!')
+					console.log('Message URL: %s', nodeMailer.getTestMessageURL(info))
 		})
 
 	})
