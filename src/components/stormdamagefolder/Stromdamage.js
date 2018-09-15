@@ -6,7 +6,9 @@ const Element = ScrollAnim.Element;
 const StormDamage = () => {
 	return (
 		<Element name="myScrollToElement" className="stormdamage-section" id="storm-damage">
-			<div className="big-word"> PAGE 4</div>
+			<div className="storm-word ">myScrollToElementmyScrollToElementmyScrollToElementmyScrollToElement.
+			myScrollToElementmyScrollToElementmyScrollToElementmyScrollToElement
+			myScrollToElement </div>
 		</Element>
 	)
 }

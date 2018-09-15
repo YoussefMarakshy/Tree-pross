@@ -3,11 +3,31 @@
 .footer-section{
 	/*background: white;*/
 	width: 100%;
-	height: 70vh;
+	height: 40vh;
 	font-family: 'Abril Fatface';
+	display: flex;
+	justify-content:center;
 }
 
-.big-word { 
+
+
+.name-2 {
+	font-size:100px;
+}
+
+.email-2 {
+	font-size:100px;
+}
+
+.message-1 {
+
+}
+.message-2 {
+	font-size: 100px;
+
+}
+
+/*.big-word { 
 	font-size: 50px;
 	font-weight: 800;
 	color: black;
@@ -31,7 +51,5 @@
 .message-right {
 
 	margin-left: 600px;
-	
 
-
-}
+}*/

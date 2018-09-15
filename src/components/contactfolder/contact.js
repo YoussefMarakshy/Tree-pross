@@ -41,18 +41,17 @@ class Contact extends Component{
 	render(){
 		return (
 			<Form onSubmit={this.handleSubmit}>
-				<FormGroup className="maarginn">
-					<Label className="big-word" for="name"> Name: </Label>
+				<FormGroup className="name-1">
+					<Label className="name-2" for="name"> Name: </Label>
 					<Input 
 					size="25"
-					className="name-size"
 					type="text"
 					name="name"
 					value={this.state.name}
 					onChange={this.handleChange} />
 				</FormGroup>
-				<FormGroup className="maarginn">
-					<Label className="big-word" for="email"> E-mail: </Label>
+				<FormGroup className="email-1">
+					<Label className="email-2" for="email"> E-mail: </Label>
 					<Input 
 					type="email"
 					size="25"
@@ -61,8 +60,8 @@ class Contact extends Component{
 					value={this.state.email}
 					onChange={this.handleChange} />
 				</FormGroup>
-					<FormGroup className="maarginn">
-					<Label className="big-word message-right" for="message"> Message : </Label>
+					<FormGroup className="message-1">
+					<Label className="message-2" for="message"> Message : </Label>
 					<Input 
 					type="textarea"
 					size="40"
@@ -70,7 +69,7 @@ class Contact extends Component{
 					value={this.state.message}
 					onChange={this.handleChange} />
 				</FormGroup>
-				<Button className="big-word maarginn"> Submit </Button>
+				<Button className="button-1"> Submit </Button>
 			</Form>
 		);
 	}
