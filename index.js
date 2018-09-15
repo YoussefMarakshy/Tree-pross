@@ -26,8 +26,8 @@ app.post('/api/form', (req, res) => {
 			port: 587,
         	secure: false, 
 			auth: {
-				user: 'lbjksivgf7w754yh@ethereal.email',
-				pass: '8MczAw8hhrPMKQgTtd' 
+				user: 'xrhdz5rxwnz2lrbq@ethereal.email',
+				pass: 'pdn8SDgvwGGpH1kFnG' 
 			},
 			tls: {rejectUnauthorized: false}
 		})

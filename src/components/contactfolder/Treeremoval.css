@@ -1,0 +1,37 @@
+
+
+.footer-section{
+	/*background: white;*/
+	width: 100%;
+	height: 70vh;
+	font-family: 'Abril Fatface';
+}
+
+.big-word { 
+	font-size: 50px;
+	font-weight: 800;
+	color: black;
+ }
+
+.name-size {
+	font-size: 35px;
+
+}
+
+.message-size {
+
+	
+}
+
+.maarginn {
+
+	margin-top: 30px;
+}
+
+.message-right {
+
+	margin-left: 600px;
+	
+
+
+}

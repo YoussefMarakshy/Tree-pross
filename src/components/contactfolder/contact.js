@@ -40,32 +40,37 @@ class Contact extends Component{
 
 	render(){
 		return (
-			<Form onSubmit={this.handleSubmit} style={{ width: '600px' }}>
-				<FormGroup>
-					<Label for="name"> Name: </Label>
+			<Form onSubmit={this.handleSubmit}>
+				<FormGroup className="maarginn">
+					<Label className="big-word" for="name"> Name: </Label>
 					<Input 
+					size="25"
+					className="name-size"
 					type="text"
 					name="name"
 					value={this.state.name}
 					onChange={this.handleChange} />
 				</FormGroup>
-				<FormGroup>
-					<Label for="email"> E-mail: </Label>
+				<FormGroup className="maarginn">
+					<Label className="big-word" for="email"> E-mail: </Label>
 					<Input 
 					type="email"
+					size="25"
+					className="name-size"
 					name="email"
 					value={this.state.email}
 					onChange={this.handleChange} />
 				</FormGroup>
-					<FormGroup>
-					<Label for="message"> Message : </Label>
+					<FormGroup className="maarginn">
+					<Label className="big-word message-right" for="message"> Message : </Label>
 					<Input 
 					type="textarea"
+					size="40"
 					name="message"
 					value={this.state.message}
 					onChange={this.handleChange} />
 				</FormGroup>
-				<Button> Submit </Button>
+				<Button className="big-word maarginn"> Submit </Button>
 			</Form>
 		);
 	}

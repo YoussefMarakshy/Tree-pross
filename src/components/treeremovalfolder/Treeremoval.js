@@ -6,10 +6,15 @@ const Element = ScrollAnim.Element;
 
 const TreeRemoval = () => {
 	return (
-		<Element name="myScrollToElement" className="treeremoval-section" id="tree-removal">
-			<div className="big-word"> PAGE 1</div>
-			<i className="fab fa-accessible-icon"></i>
-			Tree removal can be very tricky especially when the tree is hazardous to its surrounding area. This requires a considerable amount of expertise, and after removing thousands of trees our Pros can guarantee you a very clean, professional and safe removal.
+		<Element name="myScrollToElement" className="treeremoval-section" id="tree-removal">			
+			<div className="typing_left">
+			<span className="cool-fontt">Tee Removal</span> can be dangerous and tedious, but not for the pros.<br/>
+			 After removing thousands of trees that came in all shapes and sizes you can count on us to get the job done safely and efficiently 
+			</div>
+			<div className="img_right">
+			<img src="http://artwoodenterprises.com/wp-content/uploads/2016/10/artwood_tree_cutting_sillouette.jpg" alt="" height="700px"/>
+			</div>
+
 		</Element>
 	)
 }

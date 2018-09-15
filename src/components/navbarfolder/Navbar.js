@@ -12,8 +12,9 @@ const NavBar = () => {
 				<nav className="nav-bar__buttons cl-effect-7">
 				<a><Link className="nav-list" to="tree-removal">Tree Removal</Link></a>
 				<a><Link className="nav-list" to="stump-grinding">Stump Grinding</Link></a>
-				<a><Link className="nav-list" to="tree-trimming">Tree Trimming</Link></a>
+				<a><Link className="nav-list" to="tree-trimming">Trimming & Pruning</Link></a>
 				<a><Link className="nav-list" to="storm-damage">Storm Damage</Link></a>
+				<Link className="contact-css" to="footer"> Contact Us <br/> 608-466-0301 </Link>
 				</nav>
 				</div>
      		 </section>
