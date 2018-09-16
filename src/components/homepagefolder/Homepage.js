@@ -31,7 +31,6 @@ class Homepage extends Component{
 			<Slider slides={slides}/>
 			</div>
 		);
->>>>>>> 107483082883c8c1780dc3081d1cd258383c501d
 		
 	}
 }
