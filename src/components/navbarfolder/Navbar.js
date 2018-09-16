@@ -8,13 +8,14 @@ const NavBar = () => {
 		<header>
      	 	<section>
        			<div className="nav-bar">
-				<img src="./images/logo.png" alt="" className="nav-bar__logo"/>
-				<div className="nav-bar__buttons">
-				<Link className="nav-list" to="tree-removal">Tree Removal</Link>
-				<Link className="nav-list" to="stump-grinding">Stump Grinding</Link>
-				<Link className="nav-list" to="tree-trimming">Tree Trimming</Link>
-				<Link className="nav-list" to="storm-damage">Storm Damage</Link>
-				</div>
+				<Link className="" to ="homepage"> <img src="./images/logo.png" alt="" className="nav-bar__logo"/> </Link>
+				<nav className="nav-bar__buttons cl-effect-7">
+				<a><Link className="nav-list" to="tree-removal">Tree Removal</Link></a>
+				<a><Link className="nav-list" to="stump-grinding">Stump Grinding</Link></a>
+				<a><Link className="nav-list" to="tree-trimming">Trimming & Pruning</Link></a>
+				<a><Link className="nav-list" to="storm-damage">Storm Damage</Link></a>
+				<Link className="contact-css" to="footer"> Contact Us <br/> 608-466-0301 </Link>
+				</nav>
 				</div>
      		 </section>
     	</header>

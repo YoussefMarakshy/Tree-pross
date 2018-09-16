@@ -1,9 +1,154 @@
-/*.homepage-section {
+.homepage-section {
 	width: 100%;
 	height:100vh;
-	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+/*	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
 		url("https://images.unsplash.com/photo-1523882076-45ed041836fd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ab212651ff663f21b911421a40f356d&auto=format&fit=crop&w=1776&q=80");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: rgba(200, 200, 200, 0.7);
-}*/
+	background-color: rgba(200, 200, 200, 0.7);*/
+}
+
+/*SLIDER*/
+
+.slider{
+	height: 100vh;
+	background: pink;
+	border:1px solid black;
+}
+
+.myslider{
+	overflow: hidden; 
+	position: relative;
+	height: 100%;
+}
+
+
+.slide{
+	float: left;
+	background-repeat:no-repeat;
+	background-size: cover;
+	height:100%;
+	/*border: 0 10%;*/
+	
+}
+
+.images_container{
+	transition: transform 1s;
+	height: 100%;
+}
+		
+.clr{
+	clear: both;
+}
+.dots-container {
+	position: absolute;
+	bottom: 10px;
+	margin: 0 auto;
+	width:100%;
+	text-align: center;
+}
+
+
+.dot{
+	cursor: pointer;
+	display: inline-block;
+	width:10px;
+	margin: 0 5px;
+	height: 10px;
+	border-color: black;
+	border-radius: 10px;
+	border: 1px solid;
+}
+
+
+.slider-nav{
+	color: white!important;
+	position: absolute;
+	display: inline-block;
+	cursor: pointer;
+    top: 50%;
+    font-size: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.slider-nav:hover {
+	color: #55b65f!important;
+	transform: scale(2.0);
+}
+.previous-nav {
+    margin-left: 15px;
+}
+
+.next-nav {    
+	right: 0;
+    margin-right: 15px;
+}
+
+.slide-content {
+	width: 100%;
+	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url("http://www.johnmittontreeservices.com.au/wp-content/uploads/2015/11/storm-damaged-tree-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	font-family: 'Abril Fatface';
+
+}
+
+.slide-content2 {
+	width: 100%;
+	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url("http://www.johnmittontreeservices.com.au/wp-content/uploads/2015/11/storm-damaged-tree-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	font-family: 'Abril Fatface';
+}
+
+.slide-content3 {
+	width: 100%;
+	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+		url("http://www.johnmittontreeservices.com.au/wp-content/uploads/2015/11/storm-damaged-tree-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.slide-content4 {
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+.dot.active{
+	background: black;
+}
+
+.first-slide-content-title {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 100px ;
+	height: 450px;
+	color:white;	
+	font-weight: 800;
+	text-align: center;
+}
+
+.first-slide-content-subtitle {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 45px ;
+	margin-top: 30px;
+	height: 300px;
+	color:white;	
+	font-weight: 800;
+	text-align: center;
+
+}
+
+.titlee {
+	font-size: 80px;
+
+
+}
