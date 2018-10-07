@@ -6,10 +6,10 @@ const Element = ScrollAnim.Element;
 const StumpGrinding = () => {
 	return (
 		<Element name="myScrollToElement" className="stumpgrinding-section" id="stump-grinding">
-			<div className="stump-sent">
-				After Tree Removal you are left with an unattractive stump.<br/>
-				How Do We Deal With Them?<br/> 
-				Using Our top of line machinery and equipment that will grind the Stump and leave you with a healthy garden.<br/>
+			
+			<div>
+				<div className="question">Unattractive Stump?<br/></div>
+				<p className="stump-sent"> Using Our Top of the line Stump Grinding Machinery and equipment we will make sure you are left with a clean and healthy looking garden.</p>
 			</div>
 
 		</Element>

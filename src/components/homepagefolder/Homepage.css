@@ -86,8 +86,8 @@
 
 .slide-content {
 	width: 100%;
-	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-		url("http://www.johnmittontreeservices.com.au/wp-content/uploads/2015/11/storm-damaged-tree-1.jpg");
+	background:  linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.25)),
+		url("https://cdn.discordapp.com/attachments/365188764781510657/496911134595612682/IMG_4791.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -98,7 +98,7 @@
 .slide-content2 {
 	width: 100%;
 	background:  linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-		url("http://www.johnmittontreeservices.com.au/wp-content/uploads/2015/11/storm-damaged-tree-1.jpg");
+		url("https://cdn.discordapp.com/attachments/365188764781510657/496926184550957057/IMG_3983_2_copy.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -124,6 +124,17 @@
 }
 
 .first-slide-content-title {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 100px ;
+	height: 450px;
+	color:white;	
+	font-weight: 800;
+	text-align: center;
+}
+
+.second-slide-content-title {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;

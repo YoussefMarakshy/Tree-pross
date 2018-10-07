@@ -9,6 +9,11 @@ import TreeRemoval from './components/treeremovalfolder/Treeremoval'
 import StumpGrinding from './components/stumpgrindingfolder/Stumpgrinding'
 import Contact from './components/contactfolder/contact'
 import Footer from './components/contactfolder/Footer'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faStroopwafel)
 
 
 
