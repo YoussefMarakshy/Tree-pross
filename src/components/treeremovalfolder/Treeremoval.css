@@ -10,7 +10,9 @@ line-height: 33px;
 	box-sizing: border-box;
 }
 
-
+.box{
+	justify-content: center;
+}
 
 .treeremoval-section{
 	width: 100%;
@@ -64,7 +66,7 @@ div {
 .wrap {
 
 	max-width: 450px;
-	margin-right: 60px;
+	margin: 0 auto;
 }
 .wrap2 {
 

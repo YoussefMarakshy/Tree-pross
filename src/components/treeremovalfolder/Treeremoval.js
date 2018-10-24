@@ -11,8 +11,8 @@ const TreeRemoval = () => {
 	<Element name="myScrollToElement" className="treeremoval-section" id="tree-removal">			
 			<div className="Container">
 			<Container>
-				<Row>
-					<Row>
+				<Row className="box">
+					<div>
 						<Col xs="12"> 
 							<Col xs="12" sm="6">
 							<div className="wrap">
@@ -22,9 +22,9 @@ const TreeRemoval = () => {
 									</div>
 							</Col>
 						 </Col>
-					</Row>
+					</div>
 
-					<Row>
+					<div className="box">
 						<Col xs="12"> 
 							<Col xs="12" sm="6">
 							<div className="wrap">
@@ -34,32 +34,32 @@ const TreeRemoval = () => {
 									</div>
 							</Col>
 						 </Col>
-					</Row>	
+					</div>	
 				</Row>
-				<Row>
-					<Row>
+				<Row className="box">
+					<div className="box">
 						<Col xs="12"> 
 							<Col xs="12" sm="6">
-							<div className="wrap2">
+							<div className="wrap">
 							<div className="Icon"> <FontAwesomeIcon icon="stroopwafel"/> </div>
 									<h4>Unique Setting</h4>
 									<p className="words">In addition to a sprawling slab yard stocked with the finest natural stone, we offer a unique retail setting in which to consult with our specialists about your design and architecture needs.</p>
 									</div>
 							</Col>
 						 </Col>
-					</Row>
+					</div>
 
-					<Row>
+					<div className="box">
 						<Col xs="12"> 
 							<Col xs="12" sm="6">
-							<div className="wrap2">
+							<div className="wrap">
 							<div className="Icon"> <FontAwesomeIcon icon="stroopwafel"/> </div>
 									<h4>Unique Setting</h4>
 									<p className="words">In addition to a sprawling slab yard stocked with the finest natural stone, we offer a unique retail setting in which to consult with our specialists about your design and architecture needs.</p>
 									</div>
 							</Col>
 						 </Col>
-					</Row>	
+					</div>	
 				</Row>
 			</Container>
 			</div>
