@@ -14,6 +14,17 @@ line-height: 33px;
 	justify-content: center;
 }
 
+.title1 {
+
+	border-left: 20px solid;
+	border-color: brown;
+	text-align: center;
+	font-size: 45px;
+	padding-left: 20px;
+	color: green;
+
+}
+
 .treeremoval-section{
 	width: 100%;
 	min-height: 100vh;

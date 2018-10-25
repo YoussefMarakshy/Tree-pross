@@ -8,7 +8,6 @@ const Element = ScrollAnim.Element;
 const Footer = () => {
 	return (
 		<Element name="myScrollToElement" className="footer-section" id="footer">
-			<div className=""></div>
 			<Contact />
 		</Element>
 	)

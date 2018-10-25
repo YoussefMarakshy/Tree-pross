@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, Input, Label, Button } from 'reactstrap';
+import {Container, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import axios from 'axios'
 
 class Contact extends Component{
@@ -40,37 +40,24 @@ class Contact extends Component{
 
 	render(){
 		return (
-			<Form onSubmit={this.handleSubmit}>
-				<FormGroup className="name-1">
-					<Label className="name-2" for="name"> Name: </Label>
-					<Input 
-					size="25"
-					type="text"
-					name="name"
-					value={this.state.name}
-					onChange={this.handleChange} />
-				</FormGroup>
-				<FormGroup className="email-1">
-					<Label className="email-2" for="email"> E-mail: </Label>
-					<Input 
-					type="email"
-					size="25"
-					className="name-size"
-					name="email"
-					value={this.state.email}
-					onChange={this.handleChange} />
-				</FormGroup>
-					<FormGroup className="message-1">
-					<Label className="message-2" for="message"> Message : </Label>
-					<Input 
-					type="textarea"
-					size="40"
-					name="message"
-					value={this.state.message}
-					onChange={this.handleChange} />
-				</FormGroup>
-				<Button className="button-1"> Submit </Button>
-			</Form>
+		<Container>
+		<Form onSubmit={this.handleSubmit}>
+		<FormGroup>
+          <Label for="name">Name</Label>
+          <Input type="text" name="name" placeholder="Your Name" size="20" value={this.state.name} onChange={this.handleChange}/>
+        </FormGroup>
+        <FormGroup>
+          <Label for="email">E-mail</Label>
+          <Input type="email" name="email" placeholder="Your Email" value={this.state.email} onChange={this.handleChange} />
+        </FormGroup>
+        <FormGroup>
+          <Label for="message">Description</Label>
+          <Input type="textarea" name="message" size="30" value={this.state.message} onChange={this.handleChange}>
+          </Input>
+        </FormGroup>
+        <Button>Submit</Button>
+		</Form>
+		</Container>
 		);
 	}
 }

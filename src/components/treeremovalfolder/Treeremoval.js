@@ -9,8 +9,12 @@ const Element = ScrollAnim.Element;
 const TreeRemoval = () => {
 	return (
 	<Element name="myScrollToElement" className="treeremoval-section" id="tree-removal">			
-			<div className="Container">
 			<Container>
+			<Row>
+			 <Col sm="12" md={{ size: 6, offset: 3 }}> <span className="title1"> Tree Removal </span>
+			</Col>
+			</Row>
+
 				<Row className="box">
 					<div>
 						<Col xs="12"> 
@@ -61,8 +65,9 @@ const TreeRemoval = () => {
 						 </Col>
 					</div>	
 				</Row>
+
+				
 			</Container>
-			</div>
 
 
 

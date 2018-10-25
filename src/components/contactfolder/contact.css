@@ -5,27 +5,8 @@
 	width: 100%;
 	height: 40vh;
 	font-family: 'Abril Fatface';
-	display: flex;
-	justify-content:center;
 }
 
-
-
-.name-2 {
-	font-size:100px;
-}
-
-.email-2 {
-	font-size:100px;
-}
-
-.message-1 {
-
-}
-.message-2 {
-	font-size: 100px;
-
-}
 
 /*.big-word { 
 	font-size: 50px;

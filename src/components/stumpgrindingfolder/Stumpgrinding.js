@@ -10,7 +10,7 @@ const StumpGrinding = () => {
 
 			<Container>
 				<Row>
-					<Col xs="6">
+					<Col>
 					<div className="question"> Unattractive Stump? </div>
 					</Col>
 				</Row>

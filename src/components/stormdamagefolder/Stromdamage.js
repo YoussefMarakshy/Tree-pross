@@ -1,14 +1,16 @@
 import React from 'react'
 import './Stormdamage.css'
+import { Container, Row, Col } from 'reactstrap';
 const ScrollAnim = require('rc-scroll-anim');
 const Element = ScrollAnim.Element;
 
 const StormDamage = () => {
 	return (
 		<Element name="myScrollToElement" className="stormdamage-section" id="storm-damage">
-			<div className="storm-word ">myScrollToElementmyScrollToElementmyScrollToElementmyScrollToElement.
-			myScrollToElementmyScrollToElementmyScrollToElementmyScrollToElement
-			myScrollToElement </div>
+		
+			<Container>
+			 		<div className="title"> Storm Damage</div>
+			</Container>
 		</Element>
 	)
 }
