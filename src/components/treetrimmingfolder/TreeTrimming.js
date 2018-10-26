@@ -29,16 +29,7 @@ class TreeTrimming extends Component {
 			</div>
     
       <div className="card-deck mb-3 text-center">
-        <div className="card mb-4 shadow-sm">
-          <div className="card-header">
-            <h4 className="my-0 font-weight-normal my-card-title">Tree Trimming & Pruning</h4>
-          </div>
-          <div className="card-body">
-            <div className="description">
-				<p>Trimming & Pruning are essentials for trees to be healthy and grow. Below are some of the cases you might want to get your tree trimmed/pruned.  </p>
-			</div>
-          </div>
-        </div>
+        
         <div className="card mb-4 shadow-sm">
           <div className="card-header">
             <h4 className="my-0 font-weight-normal my-card-title">Hazardous Trees</h4>
@@ -67,6 +58,16 @@ class TreeTrimming extends Component {
 			
            While the insects might not necessarily kill off plants or a branch, they can spread diseases, weakening the tree and its branches, leading to the likelihood of falling branches.
             
+          </div>
+        </div>
+        <div className="card mb-4 shadow-sm">
+          <div className="card-header">
+            <h4 className="my-0 font-weight-normal my-card-title">Pest Control</h4>
+          </div>
+          <div className="card-body">
+            <div className="description">
+				<p>While the insects might not necessarily kill off plants or a branch, they can spread diseases, weakening the tree and its branches, leading to the likelihood of falling branches.</p>
+			</div>
           </div>
         </div>
       </div>
