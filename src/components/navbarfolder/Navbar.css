@@ -87,6 +87,12 @@
 */
 
 
+.colorwhite {
+	color:white;
+	font-size: 15px;
+	font-weight: 800;
+}
+
 .nav-bar-item{
 	color: #fff;
 	text-decoration: none;

@@ -22,6 +22,7 @@ const StormDamage = () => {
      	   We will also guarentee that what remains of the tree is safe and not a risk to other structures, people, or trees surrounding it.
      	 </Media>
     </Media>
+
 			</Container>
 		</Element>
 	)
