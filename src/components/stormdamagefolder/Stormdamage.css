@@ -5,6 +5,7 @@
 	min-height:60vh;
 	background-color: #ffffff;
 	font-family: 'Abril Fatface';
+
 }
 
 
@@ -20,6 +21,13 @@
 
 .title{
 	font-size: 70px;
+	color: #55b65f;
+	text-align: center;
+	font-family: 'Roboto', sans-serif
+}
+
+.title2{
+	font-size: 35px;
 	color: #55b65f;
 	text-align: center;
 	font-family: 'Roboto', sans-serif
