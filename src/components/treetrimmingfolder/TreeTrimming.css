@@ -8,6 +8,10 @@
 	padding: 0;
 }
 
+.my-card-title{
+	font-size: 20px !important;
+}
+
 .imagesContainer {
 	margin-top:5%;
 	height: 70vh;
