@@ -34,7 +34,7 @@ class TreeTrimming extends Component {
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody className="centerr">
-            Sometimes trees grow in angles we don't really want them to. This could cause obstruction of view or dangerous intersections with electrical wires.
+            Sometimes tree branches grow in angles we don't really want them to. This could cause obstruction of view or dangerous intersections with electrical wires and your property.
             </CardBody>
           </Card>
         </Collapse>
@@ -42,13 +42,11 @@ class TreeTrimming extends Component {
       </Col>
      <Col>
      	<div className="centerr">
-        <Button color="success" size="lg" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Tree Protection</Button>
+        <Button color="success" size="lg" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Tree Growth/Protection</Button>
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody>
-            Anim pariatur cliche reprehenderit,
-             enim eihhfhthrthrthrtr labore wes anderson cred
-             nesciunt sapiente ea proident.
+             Plants need proper quality maintenance for adequate growth. Pruning and trimming shrubs and branches drastically improves the trre's health and strength for a long time.
             </CardBody>
           </Card>
         </Collapse>
@@ -60,8 +58,7 @@ class TreeTrimming extends Component {
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody>
-            Anim pariatumohese beer labore wes anderson cred
-             nesciunt sapiente ea proident.
+            Let's be honest, not all trees look great. Depending on your house and surroundings, a tree might not match its surroundings for a lot of reasons and might need re-shaping.
             </CardBody>
           </Card>
         </Collapse>
@@ -73,7 +70,7 @@ class TreeTrimming extends Component {
         <Collapse isOpen={this.state.collapse}>
           <Card>
             <CardBody>
-           svdjnsvdklvdsklsvdnknknkln
+           While the insects might not necessarily kill off plants or a branch, they can spread diseases, weakening the tree and its branches, leading to the likelihood of falling branches.
             </CardBody>
           </Card>
         </Collapse>
