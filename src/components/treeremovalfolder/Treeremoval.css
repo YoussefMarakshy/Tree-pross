@@ -17,12 +17,18 @@ line-height: 33px;
 .title1 {
 
 	border-left: 20px solid;
-	border-color: brown;
+	border-color: #55b65f;
 	text-align: center;
 	font-size: 45px;
 	padding-left: 20px;
-	color: green;
+	color: black;
+	font-weight: 800;
 
+}
+
+.testt1 {
+
+	text align:middle;
 }
 
 .treeremoval-section{

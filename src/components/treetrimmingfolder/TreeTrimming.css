@@ -15,6 +15,13 @@
 	padding-bottom: 200px;
 }
 
+.btn-primary {
+    color: black;
+    background-color: red;
+    border-color: green;
+}
+
+
 .caroussel-images {
 	transition: transform .2s; /* Animation */
 	margin-top:;
@@ -33,6 +40,21 @@
 
 .description{
 	padding: 2% 5%;
-	font-family: 'Roboto', sans-serif
+	font-family: 'Roboto', sans-serif;
+	text-align: center ;
 }
 
+
+.big-wordss {
+	font-size: 40px;
+	text-align: center;
+}
+
+.centerr{
+	text-align: center;
+}
+
+.little-wordss {
+	font-size: 20px;
+	text-align: center;
+}

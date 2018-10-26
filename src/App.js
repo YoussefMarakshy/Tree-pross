@@ -11,9 +11,12 @@ import Contact from './components/contactfolder/contact'
 import Footer from './components/contactfolder/Footer'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStroopwafel } from '@fortawesome/free-solid-svg-icons'
+import { faStroopwafel, faUsers, faExclamationTriangle, faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons'
 
 library.add(faStroopwafel)
+library.add(faUsers)
+library.add(faExclamationTriangle)
+library.add(faMoneyBillAlt)
 
 
 
