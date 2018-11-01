@@ -4,25 +4,35 @@
 	width: 100%;
 	min-height:60vh;
 	background-color: #ffffff;
-	font-family: 'Abril Fatface';
+	font-family: 'Roboto', sans-serif
 
 }
 
+.imagesContainer {
+	margin-top:5%;
+	max-height: 70vh;
+	margin-bottom:-100px;
+	padding-bottom: 150px;	
+}
+
 .storm-damage-image{
-	 width: 100%;
+	width: 100%;
     height: auto;
     max-width: 100%;
+    border-radius: 40%;
 }
 
 
 .title5 {
-
-	border-left: 70px solid;
-	border-color: green;
+	font-family: 'Roboto', sans-serif;
+	border-right: 20px solid;
+	border-left: 20px solid;
+	border-color: #55b65f;
 	text-align: center;
-	font-size: 70px;
-	padding-left: 20px;
-
+	font-size: 45px;
+	color: black;
+	font-weight: 800;
+	margin-bottom: 50px;
 }
 
 .title{
@@ -33,8 +43,15 @@
 }
 
 .title2{
-	font-size: 35px;
-	color: #55b65f;
+	font-size: 15px;
+	color: black;
 	text-align: center;
 	font-family: 'Roboto', sans-serif
+}
+
+.storm1 {
+
+	font-size:25px;
+	font-weight: 600;
+	text-align: center;
 }

@@ -123,7 +123,27 @@
 	background: black;
 }
 
-.first-slide-content-title {
+.titlerino {
+	margin-top: 300px;
+	font-size: 70px ;
+	color: white;	
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 50px;
+	line-height: 150px;
+		font-family: 'Roboto', sans-serif;
+}
+
+.subtitlerino {
+
+	font-size: 35px ;
+	color:white;	
+	font-weight: 300;
+	text-align: center;
+	line-height: 70px;
+		font-family: 'Roboto', sans-serif;
+}
+/*.first-slide-content-title {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -156,7 +176,7 @@
 	font-weight: 800;
 	text-align: center;
 
-}
+}*/
 
 .titlee {
 	font-size: 80px;

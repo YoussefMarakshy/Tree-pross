@@ -10,10 +10,9 @@ const TreeRemoval = () => {
 	return (
 	<Element name="myScrollToElement" className="treeremoval-section" id="tree-removal">			
 			<Container>
-			<Row>
-			 <Col sm="12" md={{ size: 6, offset: 3 }}> <span className="title1"> Tree Removal </span> 
-			</Col>
-			</Row>
+				<div className="title1">
+			 Tree Removal 
+				</div>
 
 				<Row className="box">
 					<div>

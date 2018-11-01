@@ -4,9 +4,24 @@
 	/*background: white;*/
 	width: 100%;
 	height: 40vh;
-	font-family: 'Abril Fatface';
+	    font-family: 'Roboto', sans-serif;
 }
 
+
+.center {
+	margin-top: 50px;
+	margin-bottom:50px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	border-width: 5px black;
+		font-weight: 800;
+		border-bottom: 3px solid;
+		border-top: 3px solid;
+		padding-bottom: 20px;
+		padding-top: 20px;
+}
 
 /*.big-word { 
 	font-size: 50px;
